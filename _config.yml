@@ -1,0 +1,21 @@
+title: Eugene Homyakov
+tagline: The Blog
+description: Software Developer
+
+author:
+  name: Eugene Homyakov
+
+github_username: hamstergene
+
+markdown: kramdown
+
+paginate: 10
+
+gems:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+livereload: true
