@@ -77,6 +77,55 @@ a:focus {
     ), webkit moz)
 }
 
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+pre,
+code {
+    font-family: monospace, serif;
+}
+
+pre {
+    @include prefix((
+        white-space: pre-wrap,
+    ), moz o);
+    word-wrap: break-word;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    font-size: smaller;
+    color: #d0d0d0;
+
+    background: #333333;
+    margin: 0;
+    padding: 8px 15px;
+    border-radius: 3px;
+    border: 1px solid #c7c7c7;
+
+    code {
+        margin: 0;
+        padding: 0;
+        color: inherit;
+    }
+}
+
+figure.highlight {
+    margin: 0;
+    padding: 0;
+}
+
+$code-marg: 0.3em;
+code.highlighter-rouge {
+    padding: 0 $code-marg 0 $code-marg;
+    margin: 0 -$code-marg*0.5 0 -$code-marg*0.5;
+    border-radius: 3px;
+    background: #333333;
+    background: #eee;
+    color: maroon;
+}
+
 
 .sidebar {
     font-family: "PT Sans", sans-serif;
@@ -236,6 +285,6 @@ a:focus {
     }
     .post-content,
     .page-content {
-        padding: 0 1.5rem 0.5rem 1.5rem;
+        margin: 0 1.5rem 1.5rem 1.5rem;
     }
 }

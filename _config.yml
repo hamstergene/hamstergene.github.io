@@ -10,6 +10,11 @@ repository: hamstergene/hamstergene.github.io
 
 markdown: kramdown
 
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
 paginate: 10
 
 permalink: /:collection/:path/
