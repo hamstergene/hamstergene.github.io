@@ -255,7 +255,8 @@ code.highlighter-rouge {
 
 .sheet,
 .pagination,
-.adjacent {
+.adjacent,
+.comments {
     margin: 0.5rem -0.1rem;
     @media (min-width: $tablet-width) {
         margin: 0.75rem 1rem;
@@ -319,4 +320,10 @@ code.highlighter-rouge {
         position: absolute;
         right: 0.5rem;
     }
+}
+
+
+.comments {
+    font-size: smaller;
+    padding: 0 0.5rem 2rem 0.5rem;
 }

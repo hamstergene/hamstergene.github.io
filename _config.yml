@@ -1,12 +1,15 @@
 title: Eugene Homyakov
 tagline: The Blog
 description: Software Developer
+canonical_url: https://hamstergene.github.io
 
 author:
   name: Eugene Homyakov
 
 github_username: hamstergene
 repository: hamstergene/hamstergene.github.io
+
+disqus_username: hamstergene
 
 markdown: kramdown
 
@@ -24,7 +27,13 @@ defaults:
     scope:
       path: ""
     values:
+      layout: "page"
+  -
+    scope:
+      path: "_posts"
+    values:
       layout: "post"
+      comments: true
 
 gems:
   - jekyll-feed
