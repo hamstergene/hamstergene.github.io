@@ -246,7 +246,8 @@ code.highlighter-rouge {
 }
 
 .sheet,
-.pagination {
+.pagination,
+.adjacent {
     margin: 0.5rem -0.1rem;
     @media (min-width: $tablet-width) {
         margin: 0.75rem 1rem;
@@ -293,16 +294,20 @@ code.highlighter-rouge {
 }
 
 
-.pagination {
+.pagination,
+.adjacent {
     position: relative;
     font-size: smaller;
+    padding-bottom: 2rem;
 
-    .older {
+    .older,
+    .previous {
         position: absolute;
         left: 0.5rem;
     }
 
-    .newer {
+    .newer,
+    .next {
         position: absolute;
         right: 0.5rem;
     }
