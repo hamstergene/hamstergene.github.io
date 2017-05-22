@@ -26,17 +26,16 @@ title: Home
 
 <div class="pagination">
     {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
-    {% else %}
-    <span class="pagination-item older">Older</span>
+    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}"><i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;Older</a>
     {% endif %}
+
+    
+    
     {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-    <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
+    <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
     {% else %}
-    <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer</a>
+    <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
     {% endif %}
-    {% else %}
-    <span class="pagination-item newer">Newer</span>
     {% endif %}
 </div>

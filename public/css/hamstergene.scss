@@ -116,14 +116,14 @@ figure.highlight {
     padding: 0;
 }
 
-$code-marg: 0.3em;
+$code-marg: 0.25em;
 code.highlighter-rouge {
     padding: 0 $code-marg 0 $code-marg;
-    margin: 0 -$code-marg*0.5 0 -$code-marg*0.5;
+    margin: 0 -$code-marg*0.6 0 -$code-marg*0.6;
     border-radius: 3px;
-    background: #333333;
+    border: 1px silver solid;
     background: #eee;
-    color: maroon;
+    color: brown;
 }
 
 
@@ -245,7 +245,8 @@ code.highlighter-rouge {
     }
 }
 
-.sheet {
+.sheet,
+.pagination {
     margin: 0.5rem -0.1rem;
     @media (min-width: $tablet-width) {
         margin: 0.75rem 1rem;
@@ -253,7 +254,9 @@ code.highlighter-rouge {
     @media (min-width: $desktop-width) {
         margin: 1rem 2rem;
     }
+}
 
+.sheet {
     background-color: #fff;
     border-radius: 3px;
     border: 1px solid #cbcbcb;
@@ -286,5 +289,21 @@ code.highlighter-rouge {
     .post-content,
     .page-content {
         margin: 0 1.5rem 1.5rem 1.5rem;
+    }
+}
+
+
+.pagination {
+    position: relative;
+    font-size: smaller;
+
+    .older {
+        position: absolute;
+        left: 0.5rem;
+    }
+
+    .newer {
+        position: absolute;
+        right: 0.5rem;
     }
 }
