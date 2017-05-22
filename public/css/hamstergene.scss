@@ -1,0 +1,241 @@
+---
+---
+
+@mixin prefix($declarations, $prefixes: () ) {
+    @each $property, $value in $declarations {
+        @each $prefix in $prefixes {
+            #{'-' + $prefix + '-' + $property}: $value;
+        }
+
+        // Output standard non-prefixed declaration
+        #{$property}: $value;
+    }
+}
+
+@mixin use-serif-font-family {
+    font-family: "PT Serif", Georgia, "Times New Roman", serif;
+}
+
+
+
+$desktop-width: 60em;
+$tablet-width: 45em;
+
+$sidebar-color: rgb(63,114,178);
+$sidebar-hpadding: 1.5rem;
+$link-color: $sidebar-color;
+
+
+* {
+    @include prefix((
+        box-sizing: border-box
+    ), webkit moz)
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /*font-family: "PT Serif", Georgia, "Times New Roman", serif;*/
+    @include use-serif-font-family;
+    font-size: 16px;
+    line-height: 1.5;
+    @media (min-width: $tablet-width) {
+        font-size: 18px;
+    }
+    @media (min-width: $desktop-width) {
+        font-size: 20px;
+    }
+}
+
+body {
+    background-color: rgb(231,228,206);
+    background-image: url({{ site.baseurl }}/img/theme/body-background.png);
+    @include prefix((
+        text-size-adjust: 100%
+    ), webkit ms)
+}
+
+
+
+a {
+    color: $link-color;
+    @include prefix((
+        text-decoration: none,
+        /*text-decoration-line: underline,*/
+        /*text-decoration-color: transparentize(darken($link-color,15%),0.75)*/
+    ), webkit moz)
+}
+a:hover,
+a:focus {
+    @include prefix((
+        /*text-decoration-color: unset,*/
+        text-decoration: underline,
+    ), webkit moz)
+}
+
+
+.sidebar {
+    font-family: "PT Sans", sans-serif;
+    text-align: center;
+    padding: 1rem 2rem;
+    color: rgba(255,255,255,.5);
+    text-shadow:rgba(#000, 0.2) 0 1px 0;
+    background-color: $sidebar-color;
+    background-image: url({{ site.baseurl }}/img/theme/nav-background.png);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    @media (min-width: $tablet-width) {
+        position: fixed;
+        left: unset;
+        top: -1rem;
+        bottom: -1rem;
+        padding: 1rem $sidebar-hpadding*0.75;
+        right: 0;
+        width: 13rem;
+        text-align: left;
+        box-shadow: -1px 0px 3px rgba(0,0,0,.2), inset 0px 0px 2px 2px rgba($sidebar-color,.5), inset 0 0 5px 5px rgba($sidebar-color,.4);
+
+        .sidebar-content {
+            position: absolute;
+            bottom: 2rem;
+        }
+    }
+    @media (min-width: $desktop-width) {
+        padding: 2rem $sidebar-hpadding;
+        width: 15rem;
+    }
+
+    a {
+        color: #eee;
+        :link,
+        :visited {
+            text-decoration: none;
+        }
+    }
+}
+
+.sidebar-about {
+    h1 {
+        @include use-serif-font-family;
+        font-size: 1.8rem;
+        text-shadow: 0px 2px 0px #235796;
+        line-height: 120%;
+        color: #eee;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.sidebar-nav {
+    ul {
+        padding-left: 1.5rem;
+    }
+    @media (min-width: $tablet-width) {
+        >ul {
+            padding: 0;
+            margin-left: -$sidebar-hpadding*0.75;
+        }
+        >ul >li {
+            padding-left: $sidebar-hpadding*0.75;
+        }
+    }
+    @media (min-width: $desktop-width) {
+        >ul {
+            padding: 0;
+            margin-left: -$sidebar-hpadding;
+        }
+        >ul >li {
+            padding-left: $sidebar-hpadding;
+        }
+    }
+    .submenu {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    li {
+        list-style: none;
+    }
+    .fa {
+        margin-left: 0.25em;
+    }
+    .active {
+        font-weight: bold;
+        background-color: #ffcc00;
+
+        outline-left: 1px dotted rgba(#ffcc00, 0.1);
+
+        span, 
+        a:link,
+        a:visited {
+            color: #111;
+            text-decoration: none;
+            text-shadow: rgba(yellow, 0.7) 0 1px 0;
+        }
+    }
+}
+
+.copyright {
+    font-size: 0.8rem;
+}
+
+
+
+.body-content {
+    @media (min-width: $tablet-width) {
+        margin-right: 13rem;
+    }
+    @media (min-width: $desktop-width) {
+        margin-right: 15rem;
+    }
+}
+
+.sheet {
+    margin: 0.5rem -0.1rem;
+    @media (min-width: $tablet-width) {
+        margin: 0.75rem 1rem;
+    }
+    @media (min-width: $desktop-width) {
+        margin: 1rem 2rem;
+    }
+
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #cbcbcb;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.09), inset 0px 0px 2px 2px rgba(255,255,255,.5), inset 0 0 5px 5px rgba(255,255,255,.4);
+}
+
+
+.post,
+.page {
+    .post-header,
+    .page-header {
+        /*background-color: #fdfdfd;*/
+        padding: 1rem 1.5rem 0 1.5rem;
+
+        h1.post-title,
+        h1.page-title {
+            margin: 0;
+            padding: 0;
+            font-size: 1.8rem;
+        }
+
+        .post-date {
+            display: block;
+            border-bottom: 1px rgba(#aaa, 0.5) solid;
+            color: #aaa;
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+    .post-content,
+    .page-content {
+        padding: 0 1.5rem 0.5rem 1.5rem;
+    }
+}

@@ -6,13 +6,24 @@ author:
   name: Eugene Homyakov
 
 github_username: hamstergene
+repository: hamstergene/hamstergene.github.io
 
 markdown: kramdown
 
 paginate: 10
 
+permalink: /:collection/:path/
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "post"
+
 gems:
   - jekyll-feed
+  - jekyll-paginate
 
 exclude:
   - Gemfile

@@ -1,0 +1,17 @@
+<ul>
+    {% for item in include.menu %}
+        <li class="{% if item.menu %}submenu{% endif %} {% if page.url == item.url %}active{% endif %}">
+            {% if item.url and item.url contains 'http://' or item.url contains 'https://' %}
+                <a href="{{ item.url }}" title="{{ item.tooltip | default: item.title }}" class="external-link">{{ item.title }}<i class="fa fa-external-link"></i></a>
+            {% elsif item.url %}
+                <a href="{{ item.url | append: site.baseurl }}" title="{{ item.tooltip | default: item.title }}">{{ item.title }}</a>
+            {% else %}
+                <span>{{ item.title }}</span>
+            {% endif %}
+
+            {% if item.menu %}
+                {% include menu.html menu=item.menu %}
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>
