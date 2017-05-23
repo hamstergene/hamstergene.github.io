@@ -45,7 +45,7 @@ Save a copy — in case game auto-update rewrites the file back to original one.
 
 0. Get Notepad++ editor. *Notepad, Wordpad, Word will not work, they will corrupt the file*.
 
-0. Save a backup of `MassEffect2\BioGame\Config\PC\Cooked\Coalesced.ini`. Do it, because if you accidentally screw it up, the game will stop working.
+0. Save a backup of `MassEffect2\BioGame\Config\PC\Cooked\Coalesced.ini`. Do it, because if you accidentally screw up, the game will stop working.
 
 0. Open `Coalesced.ini` with Notepad++ and find `[SFXGame.SFXGameModeDefault]` section.
 
@@ -95,7 +95,7 @@ Save a copy of `Coalesced.ini` — in case game auto-update rewrites the file ba
 
 Get to a stage when your Shepard can run around, and hit Period `.` key. You only need to do it once, then it works until you exit the game.
 
-This fix sets FOV to `100`. You can try other values, the good ones are in the range `80..120`.
+This fix sets FOV to `100`. You can try other values, the good ones are in the range `90..120` (the default bad one is `75`).
 
 > Theoretically the Unreal engine allows to set object properties on load using a config file and then no key binding would be needed. However it does not work with Mass Effect games. Probably because developers rewrite camera's FOV with the hardcoded value `75` **after** the config has been read.
 

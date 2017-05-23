@@ -9,7 +9,7 @@ This is how I solved the problem of separating commands from their output, once 
 
 This neat trick allows to stretch the prompt so it fills the width of the terminal window:
 
-![](/img/post/shell-prompt-spans-width.png)
+![](/img/posts/shell-prompt-spans-width.png)
 
 Add to your `.bash_profile`
 

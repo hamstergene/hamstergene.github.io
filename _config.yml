@@ -35,6 +35,9 @@ defaults:
       layout: "post"
       comments: true
 
+sass:
+  sass_dir: /public/css
+
 gems:
   - jekyll-feed
   - jekyll-paginate

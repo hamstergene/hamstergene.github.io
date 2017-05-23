@@ -1,9 +1,10 @@
 - title: Blog
   url: /
 
-#- title: Mac Apps
-#  menu:
-#    - title: Preproxy
+- title: Mac Apps
+  menu:
+    - title: Preproxy
+      url: /macapps/preproxy/
 
 - title: GitHub
   url: https://github.com/hamstergene
