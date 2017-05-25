@@ -237,7 +237,7 @@ code.highlighter-rouge {
             display: inline-block;
             width: 110%;
             padding: 0.03em 0.3em;
-            margin: -0.03em -0.3em;
+            margin: -0.04em -0.3em;
             border-radius: 3px;
             background-color: #ffcc00;
             box-shadow: 0px 1px 0px 0px rgba(#444, 0.5);
@@ -293,8 +293,8 @@ code.highlighter-rouge {
 .page {
     .post-header,
     .page-header {
-        /*background-color: #fdfdfd;*/
-        padding: 1rem 1.5rem 0 1.5rem;
+        margin: 1rem 1.5rem 0 1.5rem;
+        border-bottom: 1px rgba(#aaa, 0.5) solid;
 
         h1.post-title,
         h1.page-title {
@@ -303,9 +303,9 @@ code.highlighter-rouge {
             font-size: 1.8rem;
         }
 
-        .post-date {
+        .post-date,
+        .page-date {
             display: block;
-            border-bottom: 1px rgba(#aaa, 0.5) solid;
             color: #aaa;
             font-size: 0.8rem;
             margin-bottom: 0.5rem;
