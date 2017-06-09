@@ -6,6 +6,8 @@ comments: true
 
 A simple local proxy that forwards requests to a parent proxy with automatic autorization.
 
+[![Download Preproxy on Mac App Store](/img/macapps/mac-app-store-badge.svg)](https://itunes.apple.com/app/id1237580019)
+
 Most open source apps are incapable of reading proxy password saved in System Preferences.
 Hardcoding the password in `export http_proxy=...` is no good either.
 So I made this simple app that accepts proxy requests on localhost and forwards them to the given remote proxy, automatically handling authorization using the given credentials which are stored in Keychain.
