@@ -1,6 +1,5 @@
 ---
-title: Preproxy 1.2
-date: 2017-06-30T12:40:00+03:00
+title: Preproxy
 comments: true
 ---
 
@@ -14,7 +13,11 @@ Preproxy accepts proxy requests on localhost and forwards them to the given remo
 
 Now in version 1.2, NTLM and Kerberos authentication methods are supported. Even those apps that do read proxy credentials from macOS keychain often don't care to support advanced methods like Kerberos; with Preproxy it is now possible to have any app in the system to authorize at the proxy uniformly and without saving password anywhere at all. Kerberos is main authorization method in Active Directory domains, so most corporate network proxies should already support it.
 
-Feature requests, suggestions and bug reports are welcome in the comments to this post.
+Support links:
+
+  * [Ask for help](https://desk.zoho.eu/portal/hamstergene/newticket)
+  * [Knowledge Base](https://desk.zoho.eu/portal/hamstergene/kb)
+  * [Discuss Preproxy](https://desk.zoho.eu/portal/hamstergene/community/mac-apps)
 
 [![Preproxy 1.2 NTLM Screenshot](/img/macapps/preproxy-1.2-screenshot-ntlm.png)](/img/macapps/preproxy-1.2-screenshot-ntlm.png)
 

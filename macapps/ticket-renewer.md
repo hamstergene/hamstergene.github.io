@@ -1,6 +1,5 @@
 ---
-title: Kerberos Ticket Autorenewal 1.0
-date: 2017-06-09T18:19:00+03:00
+title: Kerberos Ticket Autorenewal
 comments: true
 ---
 
@@ -13,6 +12,11 @@ Kerberos is commonly used in corporate and other large institution networks to a
 Those who use a Mac in such environment will probably find this app really handy, as it spares you from manually refreshing the expired ticket every single day.
 
 As an additional bonus, it will display a standard user notification when the password expires and provide a nice UI for changing it.
+
+Support links:
+
+  * [Ask for help](https://desk.zoho.eu/portal/hamstergene/newticket)
+  * [Discuss Kerberos Ticket Autorenewal](https://desk.zoho.eu/portal/hamstergene/community/mac-apps)
 
 [![Kerberos Ticket Autorenewal App Screenshot](/img/macapps/ticket-renewer-screenshot1.png)](/img/macapps/ticket-renewer-screenshot1.png)
 
