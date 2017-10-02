@@ -28,5 +28,9 @@
 
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.baseurl }}/atom.xml">
 
+  {% if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords | join: ',' }}" />
+  {% endif %}
+
   {% seo %}
 </head>

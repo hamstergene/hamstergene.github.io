@@ -1,6 +1,6 @@
 ---
 title: Kerberos Ticket Autorenewal
-comments: true
+comments: false
 ---
 
 A Mac app that will automatically renew your Kerberos tickets.
@@ -16,7 +16,7 @@ As an additional bonus, it will display a standard user notification when the pa
 Support links:
 
   * [Ask for help](https://desk.zoho.eu/portal/hamstergene/newticket)
-  * [Discuss Kerberos Ticket Autorenewal](https://desk.zoho.eu/portal/hamstergene/community/mac-apps)
+  * [Discussion Forum for Users](https://desk.zoho.eu/portal/hamstergene/community/mac-apps)
 
 [![Kerberos Ticket Autorenewal App Screenshot](/img/macapps/ticket-renewer-screenshot1.png)](/img/macapps/ticket-renewer-screenshot1.png)
 

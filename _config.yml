@@ -38,7 +38,7 @@ defaults:
 sass:
   sass_dir: /public/css
 
-gems:
+plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-redirect-from
