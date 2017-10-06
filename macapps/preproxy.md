@@ -4,7 +4,7 @@ comments: false
 keywords: ["automatic", "authorization", "authentication", "parent proxy", "kerberos", "NTLM", "authoxy", "Mac", "macOS", "OS X"]
 ---
 
-A local proxy app that forwards requests to a parent proxy with automatic autorization. Preproxy is basically an improved, sandboxed, Mac App Store-enabled version of Authoxy which has been abandoned for quite some time and has started having problems ever since macOS Sierra came out.
+A local proxy app that forwards requests to a parent proxy with automatic autorization. Preproxy is basically an improved, sandboxed, Mac App Store-enabled version of Authoxy. I made it because Authoxy has been abandoned for quite some time and has started having problems since macOS Sierra came out.
 
 [![Download Preproxy on Mac App Store](/img/macapps/mac-app-store-badge.svg)](https://itunes.apple.com/app/id1237580019)
 
@@ -12,22 +12,30 @@ Most open source apps are incapable of reading proxy password saved in System Pr
 Hardcoding the password in `export http_proxy=...` is no good either.
 Preproxy accepts proxy requests on localhost and forwards them to the given remote proxy, automatically taking care of proxy authorization using the  credentials stored in Keychain.
 
-NTLM and Kerberos authentication methods are supported. Even those apps that do read proxy credentials from macOS keychain often don't care to support advanced methods like Kerberos; with Preproxy it is now possible to have any app in the system to authorize at the proxy uniformly and without saving password anywhere at all. Kerberos is main authorization method in Active Directory domains, so most corporate network proxies should already support it.
+NTLM and Kerberos authentication methods are supported. Even those apps that do read proxy credentials from macOS keychain often don't care to support advanced methods like Kerberos; with Preproxy it is now possible to have any app in the system to authorize at the proxy uniformly and without saving password at all. Kerberos is main authorization method in Windows Active Directory domains, so most corporate network proxies should already support it.
 
 Support links:
 
   * [Ask for help](https://desk.zoho.eu/portal/hamstergene/newticket)
-  * [Knowledge Base](https://desk.zoho.eu/portal/hamstergene/kb)
   * [Discussion Forum for Users](https://desk.zoho.eu/portal/hamstergene/community/mac-apps)
 
 [![Preproxy 1.3 NTLM Screenshot](/img/macapps/preproxy-1.3-screenshot-ntlm.png)](/img/macapps/preproxy-1.3-screenshot-ntlm.png)
 
 [![Preproxy 1.3 Kerberos Screenshot](/img/macapps/preproxy-1.3-screenshot-krb.png)](/img/macapps/preproxy-1.3-screenshot-krb.png)
 
+A useful tip:
+
+> If remote proxy address is left empty, Preproxy will connect to web sites directly, i.e. work like a regular proxy.
+>
+> This can be useful if you need to temporarily turn proxy off without having to edit `.bash_profile`, Network preferences and whatever else that is configured to use Preproxy.
+
+Changes:
+
 1.3:
 - displaying latest requests
 - logging failed requests into error log
 - fixed problems connecting to some web servers running on localhost
+- NOTE: Upgrading to High Sierra turns autostart at login off for unknown reason. You will have to open GUI and click the checkbox to reenable it.
 
 1.2: 2017-06-30
 - added Kerberos support
