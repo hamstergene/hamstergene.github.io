@@ -15,8 +15,7 @@ As an additional bonus, it will display a standard user notification when the pa
 
 Support links:
 
-  * [Ask for help](https://desk.zoho.eu/portal/hamstergene/newticket)
-  * [Discussion Forum for Users](https://desk.zoho.eu/portal/hamstergene/community/mac-apps)
+  * Create a [Support Ticket](https://hamstergene.freshdesk.com/support/tickets/new) to report a bug, suggest a feature or ask a question (*ignore account creation email if you don't want to monitor ticket status*).
 
 [![Kerberos Ticket Autorenewal App Screenshot](/img/macapps/ticket-renewer-screenshot1.png)](/img/macapps/ticket-renewer-screenshot1.png)
 

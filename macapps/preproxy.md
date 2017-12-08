@@ -14,22 +14,22 @@ Preproxy accepts proxy requests on localhost and forwards them to the given remo
 
 NTLM and Kerberos authentication methods are supported. Even those apps that do read proxy credentials from macOS keychain often don't care to support advanced methods like Kerberos; with Preproxy it is now possible to have any app in the system to authorize at the proxy uniformly and without saving password at all. Kerberos is main authorization method in Windows Active Directory domains, so most corporate network proxies should already support it.
 
+Preproxy also supports Proxy Auto-Configuration scripts that are commonly used in Windows networks. This allows command line apps to automatically use the latest configuration provided by network administrators.
+
 Support links:
 
-  * [Ask for help](https://desk.zoho.eu/portal/hamstergene/newticket)
-  * [Discussion Forum for Users](https://desk.zoho.eu/portal/hamstergene/community/mac-apps)
+  * Create a [Support Ticket](https://hamstergene.freshdesk.com/support/tickets/new) to report a bug, suggest a feature or ask a question (*ignore account creation email if you don't want to monitor ticket status*).
 
-[![Preproxy 1.3 NTLM Screenshot](/img/macapps/preproxy-1.3-screenshot-ntlm.png)](/img/macapps/preproxy-1.3-screenshot-ntlm.png)
+  * Check [Knowledge Base](https://hamstergene.freshdesk.com/support/solutions) for tips on using the app.
 
-[![Preproxy 1.3 Kerberos Screenshot](/img/macapps/preproxy-1.3-screenshot-krb.png)](/img/macapps/preproxy-1.3-screenshot-krb.png)
+[![Preproxy 1.4 NTLM Screenshot](/img/macapps/preproxy-1.4-screenshot-ntlm.png)](/img/macapps/preproxy-1.4-screenshot-ntlm.png)
 
-A useful tip:
-
-> If remote proxy address is left empty, Preproxy will connect to web sites directly, i.e. work like a regular proxy.
->
-> This can be useful if you need to temporarily turn proxy off without having to edit `.bash_profile`, Network preferences and whatever else that is configured to use Preproxy.
+[![Preproxy 1.4 Kerberos Screenshot](/img/macapps/preproxy-1.4-screenshot-krb.png)](/img/macapps/preproxy-1.4-screenshot-krb.png)
 
 Changes:
+
+1.4:
+- Proxy Auto-Configuration support (w/o SOCKS)
 
 1.3:
 - displaying latest requests
@@ -37,10 +37,10 @@ Changes:
 - fixed problems connecting to some web servers running on localhost
 - NOTE: Upgrading to High Sierra turns autostart at login off for unknown reason. You will have to open GUI and click the checkbox to reenable it.
 
-1.2: 2017-06-30
+1.2:
 - added Kerberos support
 - added NTLM support
 - displaying latest request status for easier diagnostics
 
-1.0.1: 2017-05-19
+1.0.1:
 - the initial release.
