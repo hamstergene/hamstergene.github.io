@@ -22,25 +22,34 @@ Support links:
 
   * Check [Knowledge Base](https://hamstergene.freshdesk.com/support/solutions) for tips on using the app.
 
-[![Preproxy 1.4 NTLM Screenshot](/img/macapps/preproxy-1.4-screenshot-ntlm.png)](/img/macapps/preproxy-1.4-screenshot-ntlm.png)
+[![Preproxy 1.5 NTLM Screenshot](/img/macapps/preproxy-1.5-screenshot-ntlm.png)](/img/macapps/preproxy-1.5-screenshot-ntlm.png)
 
-[![Preproxy 1.4 Kerberos Screenshot](/img/macapps/preproxy-1.4-screenshot-krb.png)](/img/macapps/preproxy-1.4-screenshot-krb.png)
+[![Preproxy 1.5 Kerberos Screenshot](/img/macapps/preproxy-1.5-screenshot-krb.png)](/img/macapps/preproxy-1.5-screenshot-krb.png)
 
-Changes:
+[![Preproxy 1.5 Exceptions Screenshot](/img/macapps/preproxy-1.5-screenshot-exceptions.png)](/img/macapps/preproxy-1.4-screenshot-exceptions.png)
+
+New changes:
+
+1.5:
+- An option to bypass parent proxy for certain IP/domains to have uniform configuration between command-line and GUI apps.
+- Allow longer Kerberos authentication tokens ("Malformed message" error)
+- Fixed sporadic "Host not found" DNS failures
+- Listen on IPv6 port too if available
+- Recent requests UI improved slightly
+
+1.4.2:
+- Try direct connection if remote proxy is unavailable (a case of MacBook carried from office to home and back)
 
 1.4:
 - Proxy Auto-Configuration support (w/o SOCKS)
 
 1.3:
-- displaying latest requests
-- logging failed requests into error log
-- fixed problems connecting to some web servers running on localhost
+- Recent requests UI
+- Error log for failed requests
+- Web servers running on localhost will be always connected directly
 - NOTE: Upgrading to High Sierra turns autostart at login off for unknown reason. You will have to open GUI and click the checkbox to reenable it.
 
 1.2:
-- added Kerberos support
-- added NTLM support
-- displaying latest request status for easier diagnostics
-
-1.0.1:
-- the initial release.
+- Kerberos support
+- NTLM support
+- Latest request result for easier diagnostics
