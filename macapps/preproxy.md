@@ -30,7 +30,7 @@ Support links:
 
 New changes:
 
-1.5:
+1.5.1:
 - An option to bypass parent proxy for certain IP/domains to have uniform configuration between command-line and GUI apps.
 - Allow longer Kerberos authentication tokens ("Malformed message" error)
 - Fixed sporadic "Host not found" DNS failures
