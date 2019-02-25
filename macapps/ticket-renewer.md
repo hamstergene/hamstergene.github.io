@@ -17,11 +17,16 @@ Support links:
 
   * Create a [Support Ticket](https://hamstergene.freshdesk.com/support/tickets/new) to report a bug, suggest a feature or ask a question (*ignore account creation email if you don't want to monitor ticket status*).
 
+  * [Kerberos Ticket Autorenewal Privacy Policy](/macapps/ticket-renewer-privacy/) as required by Mac App Store.
+
 [![Kerberos Ticket Autorenewal App Screenshot](/img/macapps/ticket-renewer-screenshot1.png)](/img/macapps/ticket-renewer-screenshot1.png)
 
 [![Kerberos Ticket Autorenewal App Screenshot](/img/macapps/ticket-renewer-screenshot2.png)](/img/macapps/ticket-renewer-screenshot2.png)
 
 New changes:
+
+1.2.1:
+* Dark Mode support.
 
 1.1:
 * An option to keep the default credentials from changing (in Preferences).
@@ -29,4 +34,4 @@ New changes:
 * Get tickets instantly whenever a new network is connected.
 
 1.0:
-* Initial release
+* Initial release.

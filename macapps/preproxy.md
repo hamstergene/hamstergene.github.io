@@ -22,6 +22,8 @@ Support links:
 
   * Check [Knowledge Base](https://hamstergene.freshdesk.com/support/solutions) for tips on using the app.
 
+  * [Preproxy Privacy Policy](/macapps/preproxy-privacy/) as required by Mac App Store.
+
 [![Preproxy 1.5 NTLM Screenshot](/img/macapps/preproxy-1.5-screenshot-ntlm.png)](/img/macapps/preproxy-1.5-screenshot-ntlm.png)
 
 [![Preproxy 1.5 Kerberos Screenshot](/img/macapps/preproxy-1.5-screenshot-krb.png)](/img/macapps/preproxy-1.5-screenshot-krb.png)
@@ -29,6 +31,9 @@ Support links:
 [![Preproxy 1.5 Exceptions Screenshot](/img/macapps/preproxy-1.5-screenshot-exceptions.png)](/img/macapps/preproxy-1.4-screenshot-exceptions.png)
 
 New changes:
+
+1.5.3:
+- Gracefully handle the case when parent proxy unexpectedly drops connection mid auth.
 
 1.5.1:
 - An option to bypass parent proxy for certain IP/domains to have uniform configuration between command-line and GUI apps.
