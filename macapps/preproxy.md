@@ -18,11 +18,11 @@ Preproxy also supports Proxy Auto-Configuration scripts that are commonly used i
 
 Support links:
 
-  * Create a [Support Ticket](https://hamstergene.freshdesk.com/support/tickets/new) to report a bug, suggest a feature or ask a question (*ignore account creation email if you don't want to monitor ticket status*).
-
   * Check [Knowledge Base](https://hamstergene.freshdesk.com/support/solutions) for tips on using the app.
 
   * [Preproxy Privacy Policy](/macapps/preproxy-privacy/) as required by Mac App Store.
+
+  * I do not have enough free time to adequately handle new feature requests anymore. If you find the app broken on a newer macOS, create a [Support Ticket](https://hamstergene.freshdesk.com/support/tickets/new) (*ignore account creation email if you don't want to monitor ticket status*).
 
 [![Preproxy 1.5 NTLM Screenshot](/img/macapps/preproxy-1.5-screenshot-ntlm.png)](/img/macapps/preproxy-1.5-screenshot-ntlm.png)
 

@@ -15,9 +15,9 @@ As an additional bonus, it will display a standard user notification when the pa
 
 Support links:
 
-  * Create a [Support Ticket](https://hamstergene.freshdesk.com/support/tickets/new) to report a bug, suggest a feature or ask a question (*ignore account creation email if you don't want to monitor ticket status*).
-
   * [Kerberos Ticket Autorenewal Privacy Policy](/macapps/ticket-renewer-privacy/) as required by Mac App Store.
+
+  * I do not have enough free time to adequately handle new feature requests anymore. If you find the app broken on a newer macOS, create a (*ignore account creation email if you don't want to monitor ticket status*).
 
 [![Kerberos Ticket Autorenewal App Screenshot](/img/macapps/ticket-renewer-screenshot1.png)](/img/macapps/ticket-renewer-screenshot1.png)
 
