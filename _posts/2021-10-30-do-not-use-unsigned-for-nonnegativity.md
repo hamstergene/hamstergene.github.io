@@ -1,6 +1,5 @@
 ---
 title: "Do not use unsigned for non-negativity"
-published: false
 ---
 
 It is common to find C/C++ code using unsigned types for no better reason than to annotate non-negativity of an integer. [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Res-nonnegative) and [Google Style Guide](https://google.github.io/styleguide/cppguide.html#Integer_Types) advise against that, but do not elaborate enough why.
