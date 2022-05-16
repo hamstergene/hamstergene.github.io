@@ -32,6 +32,9 @@ Support links:
 
 New changes:
 
+1.5.5:
+- Apple Silicon native.
+
 1.5.3:
 - Gracefully handle the case when parent proxy unexpectedly drops connection mid auth.
 

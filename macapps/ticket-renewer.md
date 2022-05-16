@@ -17,13 +17,16 @@ Support links:
 
   * [Kerberos Ticket Autorenewal Privacy Policy](/macapps/ticket-renewer-privacy/) as required by Mac App Store.
 
-  * I do not have enough free time to adequately handle new feature requests anymore. If you find the app broken on a newer macOS, create a (*ignore account creation email if you don't want to monitor ticket status*).
+  * I do not have enough free time to adequately handle new feature requests anymore. If you find the app broken on a newer macOS, create a [Support Ticket](https://hamstergene.freshdesk.com/support/tickets/new) (*ignore account creation email if you don't want to monitor ticket status*).
 
 [![Kerberos Ticket Autorenewal App Screenshot](/img/macapps/ticket-renewer-screenshot1.png)](/img/macapps/ticket-renewer-screenshot1.png)
 
 [![Kerberos Ticket Autorenewal App Screenshot](/img/macapps/ticket-renewer-screenshot2.png)](/img/macapps/ticket-renewer-screenshot2.png)
 
 New changes:
+
+1.2.4:
+* Apple Silicon native.
 
 1.2.1:
 * Dark Mode support.
