@@ -5,6 +5,8 @@ comments: false
 
 A Mac app that will automatically renew your Kerberos tickets.
 
+> Consider this app deprecated. macOS 26.x Tahoe now includes Apple-made Kerberos SSO funtionality that can do the same thing without relying on third-party apps. If your company's IT is still not using that, point them out.
+
 [![Download Kerberos Ticket Autorenewal on Mac App Store](/img/macapps/mac-app-store-badge.svg)](https://itunes.apple.com/app/id1246781916)
 
 Kerberos is commonly used in corporate networks to authenticate at intranet websites and other internal services without entering password all the time. The most common example is Microsoft Active Directory domain.
@@ -16,8 +18,6 @@ As an additional bonus, it will display a standard user notification when the pa
 Support links:
 
   * [Kerberos Ticket Autorenewal Privacy Policy](/macapps/ticket-renewer-privacy/) as required by Mac App Store.
-
-  * I do not have enough free time to adequately handle new feature requests anymore. If you find the app broken on a newer macOS, create a [Support Ticket](https://hamstergene.freshdesk.com/support/tickets/new) (*ignore account creation email if you don't want to monitor ticket status*).
 
 [![Kerberos Ticket Autorenewal App Screenshot](/img/macapps/ticket-renewer-screenshot1.png)](/img/macapps/ticket-renewer-screenshot1.png)
 
