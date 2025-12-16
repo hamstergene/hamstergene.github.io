@@ -3,9 +3,9 @@ title: Kerberos Ticket Autorenewal
 comments: false
 ---
 
-A Mac app that will automatically renew your Kerberos tickets.
+> Consider this app **deprecated**. macOS 26.x Tahoe now includes Apple-made Kerberos SSO funtionality that can do the same thing without relying on third-party apps. If your company's IT is still not using that, point them out.
 
-> Consider this app deprecated. macOS 26.x Tahoe now includes Apple-made Kerberos SSO funtionality that can do the same thing without relying on third-party apps. If your company's IT is still not using that, point them out.
+A Mac app that will automatically renew your Kerberos tickets.
 
 [![Download Kerberos Ticket Autorenewal on Mac App Store](/img/macapps/mac-app-store-badge.svg)](https://itunes.apple.com/app/id1246781916)
 

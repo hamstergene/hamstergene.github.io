@@ -5,7 +5,7 @@
   menu:
     - title: Preproxy
       url: /macapps/preproxy/
-    - title: Kerberos Ticket Autorenewal
+    - title: <s>Kerberos Ticket Autorenewal</s>
       url: /macapps/ticket-renewer/
 
 - title: GitHub

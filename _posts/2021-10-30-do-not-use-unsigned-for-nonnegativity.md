@@ -45,7 +45,7 @@ The semantics of mixing signed and unsigned is a minefield:
 0. But wait, `(long long int)12 - (int)25 < (unsigned int)32` is true again! All it took is for *12* to became a larger type.
 0. If that's not convincing, remember:
     * Type names are often typedefs that can be changed.
-    * Integer sizes are platform and compiler-dependent.
+    * Integer sizes are platform and compiler-dependent: some of the above may easily become not true after porting.
 
 Now, knowing all the above, imagine code-reviewing the expression `if (source_index - findTargetIndex() < getSize())`? Doesn't look like a simple piece of code anymore, does it.
 
@@ -76,7 +76,7 @@ If you think of the value as of a common integer, if arithmetical operations mak
 It does not matter if the value can never be negative; the intermediate results of arithmetical operations may still be. One can't know which operations other programmers will do with such non-negative value:
 
 * Negative array length does not make sense, but subtracting two lengths from each other does.
-* Array indexes can not be negative during element access, but can be during computations.
+* Array indexes can not be negative during element access, but the offset between indexes can.
 
 Use unsigned for values that are not integers and/or not subject to arithmetic:
 
