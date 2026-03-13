@@ -47,5 +47,6 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - vendor
 
 livereload: true
